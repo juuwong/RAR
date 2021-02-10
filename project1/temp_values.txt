@@ -1,0 +1,40 @@
+	# to test example function
+	print_str("Output of example function\n")
+	li x10, 250 # pass inputs
+	li x11, -2
+	call average
+	mv t0, a0
+	print_str("Value stored in x10:")
+	print_int(t0)
+
+# Use the following labels for functions
+	# problem 1: lpyear
+	# problem 2: gcd
+	# problem 3: npnum
+	# problem 4: palin
+
+	# to test lpyear function
+	print_str("\nOutput of lpyear function\n")
+	li x10, 2001 # pass inputs
+	call lpyear
+	mv t0, a0
+	print_str("Value stored in x10:")
+	print_int(t0)
+
+	print_str("\nOutput of gcd function\n")
+	li x10, 250 # pass inputs
+	li x11, 100
+	call gcd
+	mv t0, a0
+	print_str("Value stored in x10:")
+	print_int(t0)
+
+
+
+	# to test palin function
+	print_str("\nOutput of palin function\n")
+	li x10, 0xABA # pass inputs
+	call palin
+	mv t0, a0
+	print_str("Value stored in x10: ")
+	print_int(t0)
